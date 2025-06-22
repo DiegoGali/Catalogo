@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #bcedf3; /* Un tono crema suave */
+    color: #5e503f; /* Un tono marrón oscuro */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #9a8c98;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+p {
+    font-size: 1.2em;
+    color: #b5838d; /* Un lila más vibrante */
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-left: 4px solid #c9ada7;
+    padding-left: 10px;
+}
+
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 800px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 500px) {
+    .catalogo {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+}
+
+.producto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: 300px; /* Ajusta a la altura que prefieras */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    color: #5e503f;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.precio {
+    color: #e29578; /* Un tono naranja terroso */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #706677; /* Otro tono lila grisáceo */
+    font-size: 0.9em;
+}
+
+/* Estilos adicionales para un toque más elegante */
+header {
+    border-bottom: 2px solid #c9ada7;
+    padding-bottom: 20px;
+}
+
+.producto {
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
